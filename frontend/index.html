@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="sr-Latn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Caffe di Romma — mesto za dobru kafu, prijatnu atmosferu i trenutke koji se pamte."
+    />
+    <title>Caffe di Romma | Početna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <script>document.documentElement.classList.add("has-js");</script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Preskoči na sadržaj</a>
+
+    <header class="site-header" data-header>
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html" aria-label="Caffe di Romma — početna strana">
+          <img
+            class="brand__image"
+            src="images/logo.png"
+            alt="Caffe di Romma"
+            width="500"
+            height="500"
+            data-image
+          />
+          <span class="brand__fallback" aria-hidden="true">Caffe di Romma</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Otvori navigaciju"
+          data-nav-toggle
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-navigation" aria-label="Glavna navigacija" data-nav>
+          <a href="meni.html">Meni</a>
+          <a href="galerija.html">Galerija</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <nav class="section-pagination" aria-label="Navigacija kroz sekcije" data-section-pagination>
+      <a class="is-active" href="#pocetna" aria-label="Početna sekcija" aria-current="true" data-section-link="pocetna"></a>
+      <a href="#o-nama" aria-label="Sekcija O nama" data-section-link="o-nama"></a>
+    </nav>
+
+    <main id="main-content">
+      <section class="hero" id="pocetna" aria-labelledby="hero-title" data-page-section>
+          <div class="slider" aria-roledescription="carousel" aria-label="Ambijent Caffe di Romma" data-slider>
+            <div class="slider__viewport">
+              <article class="slide is-active" aria-hidden="false" data-slide>
+                <img
+                  src="images/slika1.jpeg"
+                  alt="Topao enterijer Caffe di Romma sa cvetnim zidom"
+                  width="1456"
+                  height="1092"
+                  fetchpriority="high"
+                  data-image
+                />
+              </article>
+              <article class="slide" aria-hidden="true" data-slide>
+                <img
+                  src="images/slika2.jpeg"
+                  alt="Zastakljena terasa Caffe di Romma ukrašena toplim svetlima"
+                  width="1094"
+                  height="1456"
+                  loading="lazy"
+                  data-image
+                />
+              </article>
+              <article class="slide" aria-hidden="true" data-slide>
+                <img
+                  src="images/slika3.jpeg"
+                  alt="Večernji pogled na ulaz u Caffe di Romma"
+                  width="1456"
+                  height="1092"
+                  loading="lazy"
+                  data-image
+                />
+              </article>
+            </div>
+
+            <button class="slider__arrow slider__arrow--previous" type="button" aria-label="Prethodna fotografija" data-slider-previous>
+              <span aria-hidden="true">←</span>
+            </button>
+            <button class="slider__arrow slider__arrow--next" type="button" aria-label="Sledeća fotografija" data-slider-next>
+              <span aria-hidden="true">→</span>
+            </button>
+
+            <div class="slider__counter" aria-hidden="true">
+              <span data-slider-current>01</span>
+              <span aria-hidden="true"> / </span>
+              <span data-slider-total>03</span>
+            </div>
+
+            <div class="slider__progress" aria-hidden="true">
+              <span data-slider-progress></span>
+            </div>
+
+            <div class="slider__dots" aria-label="Izaberi fotografiju">
+              <button class="is-active" type="button" aria-label="Prikaži fotografiju 1" aria-current="true" data-slider-dot="0"></button>
+              <button type="button" aria-label="Prikaži fotografiju 2" data-slider-dot="1"></button>
+              <button type="button" aria-label="Prikaži fotografiju 3" data-slider-dot="2"></button>
+            </div>
+          </div>
+
+        <div class="container hero__welcome" data-reveal>
+          <p class="eyebrow hero__signature-label">Caffe di Romma <span aria-hidden="true">·</span> Since 2021</p>
+          <h1 id="hero-title">
+            <span>Dobro došli u</span>
+            Caffe di Romma
+          </h1>
+          <span class="hero__signature-line" aria-hidden="true"></span>
+          <p class="hero__tagline">Kafa. Atmosfera. Trenuci koji se pamte.</p>
+        </div>
+
+        <div class="container values" aria-label="Vrednosti Caffe di Romma" data-reveal>
+          <article class="value-item">
+            <span class="value-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M5 9h11v5.5A4.5 4.5 0 0 1 11.5 19h-2A4.5 4.5 0 0 1 5 14.5V9Z" />
+                <path d="M16 11h1.5a2.5 2.5 0 0 1 0 5H16M8 5c0 1 1 1 1 2M12 4c0 1 1 1 1 2" />
+              </svg>
+            </span>
+            <p class="value-item__number">01</p>
+            <h2>Pažljivo odabrana kafa</h2>
+            <p>Ukus biran sa iskustvom, kako bi svaka šoljica bila razlog da nam se vratite.</p>
+          </article>
+
+          <article class="value-item">
+            <span class="value-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <circle cx="12" cy="12" r="8" />
+                <path d="M12 8v4l2.5 1.5M9 2h6" />
+              </svg>
+            </span>
+            <p class="value-item__number">02</p>
+            <h2>Iskustvo koje se oseća</h2>
+            <p>Dugogodišnje poznavanje ugostiteljstva utkano je u svaki detalj usluge.</p>
+          </article>
+
+          <article class="value-item">
+            <span class="value-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M4 19v-2a4 4 0 0 1 4-4h3a4 4 0 0 1 4 4v2M9.5 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                <path d="M16 7a2.5 2.5 0 0 1 0 5M16.5 14a3.5 3.5 0 0 1 3.5 3.5V19" />
+              </svg>
+            </span>
+            <p class="value-item__number">03</p>
+            <h2>Atmosfera kojoj se vraćate</h2>
+            <p>Topao ambijent za jutarnju kafu, predah i razgovore sa dragim ljudima.</p>
+          </article>
+        </div>
+
+        <a class="section-arrow" href="#o-nama" aria-label="Pređi na sekciju O nama">
+          <span aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <section class="about section" id="o-nama" aria-labelledby="about-title" data-page-section data-reveal>
+        <div class="container about__grid">
+          <div class="about__content">
+            <span class="about__year" aria-hidden="true">2021</span>
+            <p class="eyebrow">Caffe di Romma</p>
+            <h2 id="about-title">O nama</h2>
+            <p>
+              Caffe di Romma osnovala je Žaklina Rašić 2021. godine, nakon dugogodišnjeg rada kao konobarica i šankerka. Vreme provedeno iza šanka naučilo ju je da dobar kafić ne čine samo piće i enterijer, već ljudi, pažnja i osećaj da je svaki gost dobrodošao.
+            </p>
+            <p>
+              Vođena tim iskustvom, odlučila je da otvori svoj prvi kafić — mesto u kom će spojiti kvalitetnu kafu, posvećenu uslugu i toplu atmosferu. Posebnu pažnju posvetila je izboru kafe, tražeći ukus koji će gosti prepoznati i kom će želeti da se vrate.
+            </p>
+            <p>
+              Tako je nastao Caffe di Romma: kutak za jutarnji ritual, predah tokom dana i duge razgovore sa dragim ljudima. Od prvog dana želja je ista — da svaki gost ode zadovoljan i ponovo dođe kao prijatelj.
+            </p>
+
+            <blockquote class="about__quote">
+              <p>Dobar kafić ne čine samo kafa i enterijer, već pažnja, ljudi i osećaj da ste uvek dobrodošli.</p>
+            </blockquote>
+
+            <div class="founder">
+              <span class="founder__line" aria-hidden="true"></span>
+              <p>
+                <strong>Žaklina Rašić</strong>
+                <span>Osnivačica Caffe di Romma</span>
+              </p>
+            </div>
+            <a class="button button--secondary" href="kontakt.html">Pronađi nas</a>
+          </div>
+
+          <figure class="about__image media-card" data-about-image>
+            <img
+              src="images/slika4.jpeg"
+              alt="Kafa servirana u Caffe di Romma"
+              width="1094"
+              height="1456"
+              loading="lazy"
+              data-image
+            />
+          </figure>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="site-footer" data-reveal>
+      <div class="container site-footer__grid">
+        <a class="brand brand--footer" href="index.html" aria-label="Caffe di Romma — početna strana">
+          <img
+            class="brand__image"
+            src="images/logo.png"
+            alt="Caffe di Romma"
+            width="500"
+            height="500"
+            loading="lazy"
+            data-image
+          />
+          <span class="brand__fallback" aria-hidden="true">Caffe di Romma</span>
+        </a>
+
+        <div>
+          <h2 class="footer-heading">Brzi linkovi</h2>
+          <ul class="footer-list">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="meni.html">Meni</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Pratite nas</h2>
+          <ul class="footer-list">
+            <li>
+              <a href="https://www.instagram.com/caffe_di_romma/" target="_blank" rel="noreferrer" aria-label="Caffe di Romma na Instagramu">
+                Instagram · @caffe_di_romma
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/caffe_filigran" target="_blank" rel="noreferrer" aria-label="Caffe Filigran na Facebooku">
+                Facebook · caffe_filigran
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Radno vreme</h2>
+          <p>Nedelja – Četvrtak<br />07:00 – 23:00</p>
+          <p>Petak – Subota<br />07:00 – 00:00</p>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
+        <small>© <span data-current-year></span> Caffe di Romma. Sva prava zadržana.</small>
+      </div>
+    </footer>
+  </body>
+</html>

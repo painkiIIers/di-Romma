@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="sr-Latn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Galerija ambijenta, detalja i trenutaka iz Caffe di Romma u Smederevu." />
+    <title>Galerija | Caffe di Romma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <script>document.documentElement.classList.add("has-js");</script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Preskoči na sadržaj</a>
+
+    <header class="site-header" data-header>
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html" aria-label="Caffe di Romma — početna strana">
+          <img class="brand__image" src="images/logo.png" alt="Caffe di Romma" width="500" height="500" data-image />
+          <span class="brand__fallback" aria-hidden="true">Caffe di Romma</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Otvori navigaciju" data-nav-toggle>
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-navigation" aria-label="Glavna navigacija" data-nav>
+          <a href="meni.html">Meni</a>
+          <a href="galerija.html" aria-current="page">Galerija</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="gallery-intro section" aria-labelledby="gallery-title" data-reveal>
+        <div class="container gallery-intro__content">
+          <p class="eyebrow">Naš ambijent</p>
+          <h1 id="gallery-title">Trenuci iz Caffe di Romma</h1>
+          <p>Toplo svetlo, pažljivo uređeni detalji i atmosfera zbog koje se ostaje malo duže.</p>
+          <span class="gallery-intro__line" aria-hidden="true"></span>
+        </div>
+      </section>
+
+      <section class="gallery-section section" id="fotografije" aria-labelledby="photos-title" data-reveal>
+        <div class="container gallery-section__heading">
+          <div>
+            <p class="eyebrow">Galerija</p>
+            <h2 id="photos-title">Zavirite u naš prostor</h2>
+          </div>
+          <p>Kliknite na fotografiju za prikaz preko celog ekrana.</p>
+        </div>
+
+        <div class="container gallery-grid">
+          <button class="gallery-card gallery-card--wide" type="button" data-gallery-item data-src="images/slika1.jpeg" data-alt="Enterijer Caffe di Romma sa cvetnim zidom" data-caption="Enterijer · Caffe di Romma">
+            <img src="images/slika1.jpeg" alt="Enterijer Caffe di Romma sa cvetnim zidom" width="1456" height="1092" loading="eager" />
+            <span><strong>Enterijer</strong><small>Topla atmosfera</small></span>
+          </button>
+
+          <button class="gallery-card gallery-card--portrait" type="button" data-gallery-item data-src="images/slika2.jpeg" data-alt="Terasa Caffe di Romma ukrašena svetlima" data-caption="Terasa · Caffe di Romma">
+            <img src="images/slika2.jpeg" alt="Terasa Caffe di Romma ukrašena svetlima" width="1094" height="1456" loading="lazy" />
+            <span><strong>Terasa</strong><small>Večernji ambijent</small></span>
+          </button>
+
+          <button class="gallery-card gallery-card--portrait" type="button" data-gallery-item data-src="images/slika4.jpeg" data-alt="Kafa servirana u Caffe di Romma" data-caption="Detalji · Caffe di Romma">
+            <img src="images/slika4.jpeg" alt="Kafa servirana u Caffe di Romma" width="1094" height="1456" loading="lazy" />
+            <span><strong>Detalji</strong><small>Trenutak za kafu</small></span>
+          </button>
+
+          <button class="gallery-card gallery-card--wide" type="button" data-gallery-item data-src="images/slika3.jpeg" data-alt="Večernji pogled na ulaz u Caffe di Romma" data-caption="Ulaz · Caffe di Romma">
+            <img src="images/slika3.jpeg" alt="Večernji pogled na ulaz u Caffe di Romma" width="1456" height="1092" loading="lazy" />
+            <span><strong>Dobro došli</strong><small>Kralja Petra Prvog 1/1</small></span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="lightbox" data-lightbox aria-label="Uvećan prikaz fotografije">
+      <div class="lightbox__content">
+        <button class="lightbox__close" type="button" aria-label="Zatvori galeriju" data-lightbox-close>×</button>
+        <button class="lightbox__arrow lightbox__arrow--previous" type="button" aria-label="Prethodna fotografija" data-lightbox-previous>←</button>
+        <figure>
+          <img src="" alt="" data-lightbox-image />
+          <figcaption data-lightbox-caption></figcaption>
+        </figure>
+        <button class="lightbox__arrow lightbox__arrow--next" type="button" aria-label="Sledeća fotografija" data-lightbox-next>→</button>
+        <p class="lightbox__counter" aria-hidden="true"><span data-lightbox-current>01</span> / <span data-lightbox-total>04</span></p>
+      </div>
+    </dialog>
+
+    <footer class="site-footer" data-reveal>
+      <div class="container site-footer__grid">
+        <a class="brand brand--footer" href="index.html" aria-label="Caffe di Romma — početna strana">
+          <img class="brand__image" src="images/logo.png" alt="Caffe di Romma" width="500" height="500" loading="lazy" data-image />
+          <span class="brand__fallback" aria-hidden="true">Caffe di Romma</span>
+        </a>
+        <div><h2 class="footer-heading">Brzi linkovi</h2><ul class="footer-list"><li><a href="index.html">Početna</a></li><li><a href="meni.html">Meni</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
+        <div><h2 class="footer-heading">Pratite nas</h2><ul class="footer-list"><li><a href="https://www.instagram.com/caffe_di_romma/" target="_blank" rel="noreferrer">Instagram · @caffe_di_romma</a></li><li><a href="https://www.facebook.com/caffe_filigran" target="_blank" rel="noreferrer">Facebook · caffe_filigran</a></li></ul></div>
+        <div><h2 class="footer-heading">Radno vreme</h2><p>Nedelja – Četvrtak<br />07:00 – 23:00</p><p>Petak – Subota<br />07:00 – 00:00</p></div>
+      </div>
+      <div class="container site-footer__bottom"><small>© <span data-current-year></span> Caffe di Romma. Sva prava zadržana.</small></div>
+    </footer>
+  </body>
+</html>

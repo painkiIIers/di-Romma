@@ -1,0 +1,171 @@
+{
+  "currency": "din",
+  "categories": [
+    {
+      "id": "akcije",
+      "name": "Akcije",
+      "items": [
+        { "name": "Cedevita narandža + espresso", "price": 300 },
+        { "name": "Cedevita limun + espresso", "price": 300 },
+        { "name": "Cedevita limeta + espresso", "price": 300 },
+        { "name": "Cedevita zova limun + espresso", "price": 300 },
+        { "name": "Cedevita narandža + domaća kafa", "price": 300 },
+        { "name": "Cedevita limun + domaća kafa", "price": 300 },
+        { "name": "Cedevita limeta + domaća kafa", "price": 300 },
+        { "name": "Cedevita zova limun + domaća kafa", "price": 300 },
+        { "name": "Cedevita crvena narandža", "price": 300 },
+        { "name": "Cockta Original + espresso", "price": 330, "verify": true },
+        { "name": "Cockta Free + espresso", "price": 280, "verify": true },
+        { "name": "Cockta Original + domaća kafa", "price": 330, "verify": true },
+        { "name": "Cockta Free + domaća kafa", "price": 280, "verify": true }
+      ]
+    },
+    {
+      "id": "kafe-topli-napici",
+      "name": "Kafe i topli napici",
+      "items": [
+        { "name": "Domaća kafa", "price": 160 },
+        { "name": "Domaća kafa sa mlekom", "price": 170 },
+        { "name": "Espresso", "price": 170 },
+        { "name": "Espresso sa mlekom", "price": 180 },
+        { "name": "Cappuccino", "price": 190 },
+        { "name": "Caffe Latte", "price": 240 },
+        { "name": "Nes", "price": 260 },
+        { "name": "Čaj nana", "price": 190 },
+        { "name": "Čaj kamilica", "price": 190 },
+        { "name": "Čaj šumsko voće", "price": 190 },
+        { "name": "Čaj jabuka cimet", "price": 190 },
+        { "name": "Čaj voćni", "price": 190 },
+        { "name": "Čaj crni", "price": 190 },
+        { "name": "Čaj zeleni", "price": 190 },
+        { "name": "Šlag kugla", "price": 60 },
+        { "name": "Keks", "price": 60 }
+      ]
+    },
+    {
+      "id": "frape-cokolada",
+      "name": "Frape i topla čokolada",
+      "items": [
+        { "name": "Frape jagoda", "price": 270, "verify": true },
+        { "name": "Frape čokolada", "price": 270, "verify": true },
+        { "name": "Topla čokolada crna", "price": 270, "verify": true },
+        { "name": "Topla čokolada bela", "price": 270, "verify": true },
+        { "name": "Plazma šejk", "price": 270, "verify": true }
+      ]
+    },
+    {
+      "id": "voda",
+      "name": "Voda",
+      "items": [
+        { "name": "Rosa", "size": "0,33 l", "price": 190 },
+        { "name": "Knjaz Miloš", "size": "0,25 l", "price": 180 },
+        { "name": "Knjaz Miloš", "size": "1 l", "price": 350 }
+      ]
+    },
+    {
+      "id": "negazirani-sokovi",
+      "name": "Negazirani sokovi",
+      "items": [
+        { "name": "Cedevita narandža", "size": "0,25 l", "price": 240 },
+        { "name": "Cedevita limun", "size": "0,25 l", "price": 240 },
+        { "name": "Cedevita limeta", "size": "0,25 l", "price": 240 },
+        { "name": "Cedevita zova limun", "size": "0,25 l", "price": 240 },
+        { "name": "Cedevita ananas mango", "size": "0,25 l", "price": 240 },
+        { "name": "Rauch jabuka", "size": "0,2 l", "price": 270 },
+        { "name": "Rauch breskva", "size": "0,2 l", "price": 270 },
+        { "name": "Rauch jagoda", "size": "0,2 l", "price": 270 },
+        { "name": "Rauch narandža", "size": "0,2 l", "price": 270 },
+        { "name": "Rauch crna ribizla", "size": "0,2 l", "price": 270 }
+      ]
+    },
+    {
+      "id": "gazirani-sokovi",
+      "name": "Gazirani sokovi",
+      "items": [
+        { "name": "Cockta Original", "size": "0,275 l", "price": 270 },
+        { "name": "Cockta Free", "size": "0,275 l", "price": 270 },
+        { "name": "Coca-Cola", "size": "0,25 l", "price": 270 },
+        { "name": "Fanta", "size": "0,25 l", "price": 270 },
+        { "name": "Sprite", "size": "0,25 l", "price": 270 },
+        { "name": "Bitter Lemon", "size": "0,25 l", "price": 270 },
+        { "name": "Tonic", "size": "0,25 l", "price": 270 }
+      ]
+    },
+    {
+      "id": "pivo",
+      "name": "Pivo",
+      "items": [
+        { "name": "Jelen", "size": "0,5 l", "price": 230, "verify": true },
+        { "name": "Tuborg", "size": "0,33 l", "price": 280, "verify": true },
+        { "name": "Tuborg", "size": "0,5 l", "price": 230, "verify": true },
+        { "name": "Nikšićko", "size": "0,5 l", "price": 240, "verify": true },
+        { "name": "Heineken", "size": "0,25 l", "price": 320, "verify": true },
+        { "name": "Heineken", "size": "0,4 l", "price": 280, "verify": true },
+        { "name": "Zaječarsko", "size": "0,33 l", "price": 260, "verify": true },
+        { "name": "Zaječarsko", "size": "0,5 l", "price": 230, "verify": true },
+        { "name": "Birra Moretti", "size": "0,4 l", "price": 240, "verify": true },
+        { "name": "Laško točeno", "size": "0,33 l", "price": 250, "verify": true },
+        { "name": "Laško točeno", "size": "0,5 l", "price": 330, "verify": true }
+      ]
+    },
+    {
+      "id": "vina",
+      "name": "Vina i cider",
+      "items": [
+        { "name": "Medveđa krv", "size": "1 l, crveno", "price": 950 },
+        { "name": "Graševina", "size": "1 l, belo", "price": 950 },
+        { "name": "Rose", "size": "1 l", "price": 950 },
+        { "name": "Vino", "size": "0,187 l, belo / crveno / roze", "price": 380, "verify": true },
+        { "name": "Somersby", "size": "0,33 l", "price": 350 }
+      ]
+    },
+    {
+      "id": "domaca-alkoholna-pica",
+      "name": "Domaća alkoholna pića",
+      "items": [
+        { "name": "Domaća rakija", "size": "0,03 l", "price": 180 },
+        { "name": "Lozovača", "size": "0,03 l", "price": 190, "verify": true },
+        { "name": "Kajsijevača", "size": "0,03 l", "price": null, "verify": true },
+        { "name": "Dunjevača", "size": "0,03 l", "price": null, "verify": true },
+        { "name": "Viljamovka", "size": "0,03 l", "price": null, "verify": true },
+        { "name": "Gorki list", "size": "0,03 l", "price": null, "verify": true },
+        { "name": "Vinjak", "size": "0,03 l", "price": 190, "verify": true },
+        { "name": "Baltic vodka", "size": "0,03 l", "price": 190, "verify": true },
+        { "name": "Gin", "size": "0,03 l", "price": 250, "verify": true },
+        { "name": "Vermouth", "size": "0,1 l", "price": 300, "verify": true },
+        { "name": "Megdan šljiva", "size": "0,03 l", "price": 270, "verify": true }
+      ]
+    },
+    {
+      "id": "strana-alkoholna-pica",
+      "name": "Strana alkoholna pića",
+      "items": [
+        { "name": "Chivas Regal", "size": "0,03 l", "price": 450, "verify": true },
+        { "name": "Jack Daniel's", "size": "0,03 l", "price": 420, "verify": true },
+        { "name": "Red Label", "size": "0,03 l", "price": 380, "verify": true },
+        { "name": "Ballantine's", "size": "0,03 l", "price": 370, "verify": true },
+        { "name": "Smirnoff", "size": "0,03 l", "price": 280, "verify": true },
+        { "name": "Tequila", "size": "0,03 l", "price": 280, "verify": true }
+      ]
+    },
+    {
+      "id": "cedjeni-sokovi",
+      "name": "Ceđeni sokovi",
+      "items": [
+        { "name": "Limunada", "size": "0,25 l", "price": 270, "verify": true },
+        { "name": "Narandža", "size": "0,25 l", "price": 350, "verify": true },
+        { "name": "Grejp", "size": "0,25 l", "price": null, "verify": true },
+        { "name": "Mix", "size": "0,25 l", "price": 450, "verify": true }
+      ]
+    },
+    {
+      "id": "energetska-pica",
+      "name": "Energetska pića",
+      "items": [
+        { "name": "Red Bull", "size": "0,25 l", "price": 370 },
+        { "name": "Guarana", "size": "0,25 l", "price": 240, "verify": true },
+        { "name": "Ultra Energy", "size": "0,25 l", "price": 260, "verify": true }
+      ]
+    }
+  ]
+}

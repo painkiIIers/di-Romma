@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="sr-Latn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Digitalni meni Caffe di Romma — kafe, sokovi, piva, vina i druga pića." />
+    <title>Digitalni meni | Caffe di Romma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <script>document.documentElement.classList.add("has-js");</script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Preskoči na sadržaj</a>
+
+    <header class="site-header" data-header>
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html" aria-label="Caffe di Romma — početna strana">
+          <img class="brand__image" src="images/logo.png" alt="Caffe di Romma" width="500" height="500" data-image />
+          <span class="brand__fallback" aria-hidden="true">Caffe di Romma</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Otvori navigaciju" data-nav-toggle>
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-navigation" aria-label="Glavna navigacija" data-nav>
+          <a href="meni.html" aria-current="page">Meni</a>
+          <a href="galerija.html">Galerija</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="menu-hero section" aria-labelledby="menu-title">
+        <div class="container menu-hero__content">
+          <p class="eyebrow">Caffe di Romma</p>
+          <h1 id="menu-title">Digitalni meni</h1>
+          <p>Izaberite kategoriju ili pronađite omiljeno piće pretragom.</p>
+          <span>Poslednje cene prema važećem cenovniku u lokalu.</span>
+        </div>
+        <a class="section-arrow" href="#akcije" aria-label="Pređi na prvu kategoriju menija">
+          <span aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <div class="menu-toolbar" data-menu-toolbar>
+        <div class="container">
+          <div class="menu-toolbar__row">
+            <label class="menu-search">
+              <span class="sr-only">Pretražite meni</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m16 16 4 4" /></svg>
+              <input type="search" placeholder="Pretražite meni…" autocomplete="off" data-menu-search />
+              <button type="button" aria-label="Obriši pretragu" data-clear-search hidden>×</button>
+            </label>
+            <button class="category-toggle" type="button" aria-expanded="false" aria-controls="category-panel" data-category-toggle>
+              <span class="category-toggle__icon" aria-hidden="true"><i></i><i></i><i></i></span>
+              Kategorije
+            </button>
+          </div>
+
+          <div class="category-panel" id="category-panel" data-category-panel hidden>
+            <div class="category-panel__heading">
+              <p>Kategorije menija</p>
+              <button type="button" aria-label="Zatvori kategorije" data-category-close>×</button>
+            </div>
+            <nav class="category-nav" aria-label="Kategorije menija" data-category-nav></nav>
+          </div>
+        </div>
+      </div>
+
+      <nav class="menu-pagination" aria-label="Brza navigacija kroz kategorije" data-menu-pagination></nav>
+
+      <section class="menu-content section" aria-live="polite">
+        <div class="container menu-state" data-menu-loading>
+          <span></span>
+          <p>Učitavamo meni…</p>
+        </div>
+        <div class="container menu-sections" data-menu-sections hidden></div>
+        <div class="container menu-empty" data-menu-empty hidden>
+          <h2>Nema rezultata</h2>
+          <p>Pokušajte sa drugim nazivom ili izaberite kategoriju.</p>
+        </div>
+        <div class="container menu-error" data-menu-error hidden>
+          <h2>Meni trenutno nije dostupan</h2>
+          <p>Osvežite stranicu ili pitajte osoblje za aktuelni cenovnik.</p>
+        </div>
+      </section>
+    </main>
+
+    <button class="back-to-top" type="button" aria-label="Vrati se na vrh menija" data-back-to-top>↑</button>
+
+    <footer class="site-footer" id="menu-footer">
+      <div class="container site-footer__grid">
+        <a class="brand brand--footer" href="index.html" aria-label="Caffe di Romma — početna strana">
+          <img class="brand__image" src="images/logo.png" alt="Caffe di Romma" width="500" height="500" loading="lazy" data-image />
+          <span class="brand__fallback" aria-hidden="true">Caffe di Romma</span>
+        </a>
+        <div><h2 class="footer-heading">Brzi linkovi</h2><ul class="footer-list"><li><a href="index.html">Početna</a></li><li><a href="galerija.html">Galerija</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
+        <div><h2 class="footer-heading">Pratite nas</h2><ul class="footer-list"><li><a href="https://www.instagram.com/caffe_di_romma/" target="_blank" rel="noreferrer">Instagram · @caffe_di_romma</a></li><li><a href="https://www.facebook.com/caffe_filigran" target="_blank" rel="noreferrer">Facebook · caffe_filigran</a></li></ul></div>
+        <div><h2 class="footer-heading">Radno vreme</h2><p>Nedelja – Četvrtak<br />07:00 – 23:00</p><p>Petak – Subota<br />07:00 – 00:00</p></div>
+      </div>
+      <div class="container site-footer__bottom"><small>© <span data-current-year></span> Caffe di Romma. Sva prava zadržana.</small></div>
+    </footer>
+  </body>
+</html>
