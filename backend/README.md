@@ -10,3 +10,5 @@
 Ne postoji ruta za registraciju. Ponovno pokretanje seed komande menja admin lozinku. Javna ruta je `GET /api/menu`; admin CRUD je na `/api/admin/menu`, uz `/api/auth/login`, `/logout` i `/me`. `DELETE` sakriva proizvod umesto trajnog brisanja.
 
 Na Windows računaru sve korake možeš odraditi i komandom `./setup.ps1`. Ako `.env` ne postoji, skripta će ga napraviti i stati da prvo promeniš tajne vrednosti.
+
+U Linuxu ili WSL-u koristi `bash setup.sh`. Docker Desktop mora imati uključenu WSL integraciju, a Node/npm moraju biti instalirani i unutar WSL distribucije.
