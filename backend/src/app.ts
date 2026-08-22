@@ -1,0 +1,21 @@
+import express from "express";
+import cookieParser from "cookie-parser";
+import cors from "cors";
+import helmet from "helmet";
+import { config } from "./config";
+import { errorHandler, notFound } from "./middleware/errors";
+import { authRouter } from "./routes/auth";
+import { adminMenuRouter, menuRouter } from "./routes/menu";
+
+export const app = express();
+app.set("trust proxy", 1);
+app.use(helmet());
+app.use(cors({ origin: config.FRONTEND_URL, credentials: true }));
+app.use(express.json({ limit: "100kb" }));
+app.use(cookieParser());
+app.get("/api/health", (_req, res) => res.json({ status: "ok" }));
+app.use("/api/auth", authRouter);
+app.use("/api/menu", menuRouter);
+app.use("/api/admin/menu", adminMenuRouter);
+app.use(notFound);
+app.use(errorHandler);
