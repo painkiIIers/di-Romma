@@ -10,6 +10,7 @@ const categoryToggle = document.querySelector("[data-category-toggle]");
 const categoryPanel = document.querySelector("[data-category-panel]");
 const categoryCloseButton = document.querySelector("[data-category-close]");
 const menuPagination = document.querySelector("[data-menu-pagination]");
+const MENU_API_URL = window.DIROMMA_API_URL || "http://localhost:3000/api";
 let menuData;
 let categoryObserver;
 const translate = (value) => window.siteI18n?.translate(value) || value;
@@ -172,7 +173,13 @@ document.addEventListener("click", (event) => {
 
 const loadMenu = async () => {
   try {
-    const response = await fetch("data/menu.json");
+    let response;
+    try {
+      response = await fetch(`${MENU_API_URL}/menu`);
+      if (!response.ok) throw new Error("API nije dostupan");
+    } catch {
+      response = await fetch("data/menu.json");
+    }
     if (!response.ok) throw new Error(`Menu request failed: ${response.status}`);
     menuData = await response.json();
     loadingState.hidden = true;

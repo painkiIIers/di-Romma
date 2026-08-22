@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="sr-Latn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Administracija | Caffe di Romma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <script src="js/admin.js" defer></script>
+  </head>
+  <body class="admin-page">
+    <main>
+      <section class="admin-login" data-login-view>
+        <form class="admin-login__card" data-login-form>
+          <img src="images/logo.png" alt="Caffe di Romma" />
+          <p class="eyebrow">Administracija</p>
+          <h1>Prijavite se</h1>
+          <p>Upravljajte proizvodima i cenama digitalnog menija.</p>
+          <label>Email <input type="email" name="email" autocomplete="username" required /></label>
+          <label>Lozinka <input type="password" name="password" autocomplete="current-password" minlength="8" required /></label>
+          <p class="admin-message" role="alert" data-login-message hidden></p>
+          <button class="admin-button admin-button--primary" type="submit">Prijavi se</button>
+        </form>
+      </section>
+
+      <section class="admin-dashboard" data-dashboard hidden>
+        <header class="admin-header">
+          <div class="admin-shell admin-header__inner">
+            <a href="index.html" aria-label="Caffe di Romma — početna strana"><img src="images/logo.png" alt="" /></a>
+            <div><p class="eyebrow">Caffe di Romma</p><h1>Digitalni meni</h1></div>
+            <button class="admin-button admin-button--secondary" type="button" data-logout>Odjavi se</button>
+          </div>
+        </header>
+
+        <div class="admin-shell admin-content">
+          <div class="admin-toolbar">
+            <label class="admin-search"><span class="sr-only">Pretražite proizvode</span><input type="search" placeholder="Pretražite proizvode…" data-admin-search /></label>
+            <button class="admin-button admin-button--primary" type="button" data-add-item>+ Dodaj proizvod</button>
+          </div>
+          <div class="admin-summary" aria-live="polite" data-summary></div>
+          <p class="admin-message" role="status" data-dashboard-message hidden></p>
+          <div class="admin-list" data-admin-list></div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="admin-dialog" data-item-dialog>
+      <form class="admin-form" data-item-form>
+        <div class="admin-dialog__heading"><div><p class="eyebrow">Digitalni meni</p><h2 data-form-title>Dodaj proizvod</h2></div><button type="button" class="admin-icon-button" aria-label="Zatvori" data-close-dialog>×</button></div>
+        <input type="hidden" name="id" />
+        <div class="admin-form__grid">
+          <label class="admin-form__wide">Naziv proizvoda <input name="name" maxlength="120" required /></label>
+          <label>Količina <input name="size" maxlength="60" placeholder="npr. 0,25 l" /></label>
+          <label>Cena u dinarima <input name="price" type="number" min="0" step="1" placeholder="Nije određena" /></label>
+          <label>Kategorija <input name="categoryName" maxlength="80" list="category-names" required /></label>
+          <label>Identifikator kategorije <input name="categoryId" maxlength="80" pattern="[a-z0-9-]+" placeholder="npr. kafe" required /></label>
+          <label>Redosled kategorije <input name="categoryOrder" type="number" min="0" step="1" value="0" required /></label>
+          <label>Redosled proizvoda <input name="itemOrder" type="number" min="0" step="1" value="0" required /></label>
+          <label class="admin-check admin-form__wide"><input name="isAvailable" type="checkbox" checked /> Proizvod je vidljiv gostima</label>
+        </div>
+        <datalist id="category-names"></datalist>
+        <p class="admin-message" role="alert" data-form-message hidden></p>
+        <div class="admin-form__actions"><button class="admin-button admin-button--secondary" type="button" data-cancel-dialog>Otkaži</button><button class="admin-button admin-button--primary" type="submit">Sačuvaj proizvod</button></div>
+      </form>
+    </dialog>
+  </body>
+</html>
